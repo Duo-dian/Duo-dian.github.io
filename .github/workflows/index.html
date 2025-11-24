@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>马克思主义基本原理 - 真理之光 照亮征程</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", "Heiti SC", sans-serif;
+        }
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        /* 顶部横幅 */
+        .banner {
+            width: 100%;
+            height: 280px;
+            background: linear-gradient(135deg, #c41e3a 0%, #8b0000 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .banner::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url("https://picsum.photos/id/1068/1920/1080") center center;
+            background-size: cover;
+            opacity: 0.15;
+            z-index: 1;
+        }
+        .banner-content {
+            text-align: center;
+            color: #fff;
+            z-index: 2;
+        }
+        .banner h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .banner p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        /* 导航栏 */
+        .nav {
+            background-color: #a80000;
+            padding: 1rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+        .nav-item {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        .nav-item:hover {
+            background-color: #8b0000;
+        }
+        /* 核心内容区 */
+        .container {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 1rem;
+        }
+        .section {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            padding: 2rem;
+            margin-bottom: 2.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 2rem;
+        }
+        .section-img {
+            flex: 1 1 300px;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 2px solid #c41e3a;
+        }
+        .section-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+        .section-img img:hover {
+            transform: scale(1.02);
+        }
+        .section-content {
+            flex: 2 1 500px;
+        }
+        .section-title {
+            color: #c41e3a;
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            border-left: 4px solid #c41e3a;
+            padding-left: 0.8rem;
+        }
+        .section-text {
+            line-height: 1.8;
+            font-size: 1.05rem;
+            margin-bottom: 1rem;
+        }
+        .section-text strong {
+            color: #8b0000;
+        }
+        /* 结语区 */
+        .conclusion {
+            background: linear-gradient(135deg, #8b0000 0%, #c41e3a 100%);
+            color: #fff;
+            padding: 3rem 2rem;
+            text-align: center;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+        .conclusion h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        .conclusion p {
+            max-width: 1000px;
+            margin: 0 auto;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+        /* 底部版权 */
+        .footer {
+            text-align: center;
+            padding: 1.5rem 0;
+            color: #666;
+            font-size: 0.9rem;
+            border-top: 1px solid #eee;
+            margin-top: 2rem;
+        }
+        /* 响应式调整 */
+        @media (max-width: 768px) {
+            .banner h1 {
+                font-size: 2.2rem;
+            }
+            .nav-container {
+                flex-wrap: wrap;
+                gap: 0.8rem;
+            }
+            .section {
+                padding: 1.5rem;
+            }
+            .section-title {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 顶部横幅 -->
+    <div class="banner">
+        <div class="banner-content">
+            <h1>马克思主义基本原理</h1>
+            <p>真理之光 照亮人类解放与发展的征程</p>
+        </div>
+    </div>
+
+    <!-- 导航栏 -->
+    <div class="nav">
+        <div class="nav-container">
+            <a href="#philosophy" class="nav-item">马克思主义哲学</a>
+            <a href="#economics" class="nav-item">政治经济学</a>
+            <a href="#socialism" class="nav-item">科学社会主义</a>
+            <a href="#conclusion" class="nav-item">当代价值</a>
+        </div>
+    </div>
+
+    <!-- 核心内容区 -->
+    <div class="container">
+        <!-- 马克思主义哲学 -->
+        <section id="philosophy" class="section">
+            <div class="section-img">
+                <img src="https://picsum.photos/id/1072/800/600" alt="马克思主义哲学示意图">
+            </div>
+            <div class="section-content">
+                <h2 class="section-title">马克思主义哲学：科学的世界观与方法论</h2>
+                <p class="section-text">马克思主义哲学即辩证唯物主义和历史唯物主义，是马克思主义的理论基础。它揭示了自然、社会和思维发展的普遍规律，为人们认识世界和改造世界提供了科学的思想武器。</p>
+                <p class="section-text"><strong>辩证唯物主义</strong>认为：世界的本原是物质，物质是运动的，运动是有规律的；矛盾是事物发展的根本动力，量变与质变、否定之否定是事物发展的基本规律。</p>
+                <p class="section-text"><strong>历史唯物主义</strong>指出：社会存在决定社会意识，生产力与生产关系、经济基础与上层建筑的矛盾运动是社会发展的根本动力，人民群众是历史的创造者。</p>
+            </div>
+        </section>
+
+        <!-- 政治经济学 -->
+        <section id="economics" class="section">
+            <div class="section-content">
+                <h2 class="section-title">政治经济学：揭示资本主义经济规律</h2>
+                <p class="section-text">马克思主义政治经济学通过分析资本主义生产方式，揭示了资本主义的内在矛盾和发展趋势，阐明了剩余价值的来源和资本主义剥削的本质。</p>
+                <p class="section-text"><strong>核心理论</strong>包括：商品二因素（使用价值与价值）、劳动二重性（具体劳动与抽象劳动）、剩余价值理论、资本积累理论、平均利润理论等。</p>
+                <p class="section-text">马克思指出，资本主义基本矛盾是生产的社会化与生产资料资本主义私人占有之间的矛盾，这一矛盾必然导致经济危机，最终决定了资本主义的历史暂时性。</p>
+            </div>
+            <div class="section-img">
+                <img src="https://picsum.photos/id/1071/800/600" alt="政治经济学理论图解">
+            </div>
+        </section>
+
+        <!-- 科学社会主义 -->
+        <section id="socialism" class="section">
+            <div class="section-img">
+                <img src="https://picsum.photos/id/1069/800/600" alt="科学社会主义运动">
+            </div>
+            <div class="section-content">
+                <h2 class="section-title">科学社会主义：无产阶级解放的科学理论</h2>
+                <p class="section-text">科学社会主义是马克思主义的核心，它阐明了无产阶级的历史使命，指明了实现社会主义和共产主义的道路、战略和策略，是指导无产阶级解放斗争的科学理论。</p>
+                <p class="section-text"><strong>核心观点</strong>：无产阶级是资本主义的掘墓人和社会主义的建设者，必须通过革命斗争推翻资本主义制度，建立无产阶级专政，逐步实现生产资料公有制，发展生产力，最终实现共产主义。</p>
+                <p class="section-text">科学社会主义还分析了社会主义社会的发展规律，强调社会主义建设必须从本国实际出发，坚持实事求是，不断推进理论和实践创新。</p>
+            </div>
+        </section>
+
+        <!-- 结语区 -->
+        <section id="conclusion" class="conclusion">
+            <h2>马克思主义的当代价值</h2>
+            <p>马克思主义是不断发展的开放的理论，始终站在时代前沿。在当代中国，马克思主义中国化时代化的最新成果——习近平新时代中国特色社会主义思想，为全面建设社会主义现代化国家、实现中华民族伟大复兴提供了根本遵循。</p>
+            <p>马克思主义所蕴含的科学思维、立场观点方法，不仅是认识世界、改造世界的强大思想武器，更是应对当今世界复杂问题、推动人类文明进步的重要指引。</p>
+        </section>
+    </div>
+
+    <!-- 底部版权 -->
+    <div class="footer">
+        <p>© 2025 马克思主义基本原理宣传网页 | 红色主题教育素材（网站所有权为“Duo、”）</p>
+    </div>
+</body>
+</html>
